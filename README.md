@@ -10,4 +10,4 @@ URL: https://ai-makers-community.github.io/website/
 
 ## 커밋 개인정보 보호
 
-커밋 작성자와 committer는 GitHub noreply 이메일을 사용합니다. 웹 편집·자동 초기화는 이메일 노출 여부를 먼저 확인합니다. CLI squash 병합 시 `gh pr merge --squash --author-email 3435720+serithemage@users.noreply.github.com`을 사용하고 병합 후 메타데이터를 검증합니다. 문서 검사는 전체 가져온 이력의 이메일도 확인합니다.
+커밋 작성자와 committer는 GitHub noreply 이메일을 사용합니다. 웹 편집·서버 병합은 계정에서 지원되는 noreply 주소와 공개 설정을 확인한 뒤 사용합니다. 계정에 등록되지 않은 이메일을 CLI 서버 병합 옵션에 넣으면 거절될 수 있습니다. 이번 초기 복구는 공개 전에 로컬에서 검증한 PR 브랜치를 fast-forward로 반영합니다. 이후 변경은 보호된 main의 PR·검사 규칙을 준수합니다. 문서 검사는 가져온 전체 이력의 이메일도 확인합니다.
